@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto Login – Next.js e Tailwind CSS
 
-## Getting Started
+## Descrição do Projeto
+Este projeto consiste no desenvolvimento de uma aplicação web simples de login utilizando **Next.js (App Router)**, **React** e **Tailwind CSS**.  
+O objetivo é demonstrar a estrutura correta do framework, componentização, gerenciamento de estado e estilização, conforme os critérios propostos.
 
-First, run the development server:
+---
+
+## Credenciais para Teste
+Para acessar o sistema, utilize as credenciais abaixo:
+
+- **Email:** admin@sport.com  
+- **Senha:** 123
+
+Essas credenciais estão definidas diretamente no componente de login apenas para fins acadêmicos e de avaliação.
+
+---
+
+## Estrutura do Projeto
+O projeto utiliza a estrutura de pastas do **Next.js App Router**, incluindo:
+
+- `app/login/page.tsx` → Página de login  
+- `app/home/page.tsx` → Página inicial após o login  
+- `components/LoginForm.tsx` → Componente de formulário de login reutilizável  
+- `components/Navbar.tsx` → Componente de navegação  
+
+---
+
+## Funcionalidades Implementadas
+- Gerenciamento de estado com **useState** para os campos de email e senha  
+- Validação simples de login com renderização condicional de mensagem de erro  
+- Redirecionamento após login utilizando **useRouter**  
+- Logout com retorno à página de login  
+- Componentização utilizando **props** para comunicação entre componentes  
+
+---
+
+## Estilização
+- Estilização realizada com **Tailwind CSS**
+- Formulário centralizado na tela
+- Uso extensivo de classes utilitárias para layout, cores, espaçamento e tipografia
+- Layout inspirado em um site esportivo
+
+---
+
+## Como Executar o Projeto
+Siga os passos abaixo para executar o projeto localmente:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
